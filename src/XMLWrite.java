@@ -6,7 +6,7 @@ import org.dom4j.io.XMLWriter;
 import java.io.*;
 
 public class XMLWrite{
-    public void generateDocument(String[]Name,String[] information ){
+    public void generateDocument(String[]Name,String[] address,String[] picture,String[] information ){
         Document document = DocumentHelper.createDocument();
         Element catalogElement = document.addElement("TOP250book");
         for(int i=0;i<250;i++)
@@ -14,6 +14,8 @@ public class XMLWrite{
             String t = "Top"+(i+1);
             Element journalElement =  catalogElement.addElement(t);
             journalElement.addAttribute("Name", Name[i]);
+            journalElement.addAttribute("address", address[i]);
+            journalElement.addAttribute("picture", picture[i]);
             journalElement.addAttribute("information", information[i]);
         }
         try{
