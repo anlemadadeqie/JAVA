@@ -52,7 +52,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/Check_num.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -83,7 +83,7 @@
       <file leaf-file-name="norgs.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/norgs.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-0.7">
               <caret line="115" column="41" selection-start-line="115" selection-start-column="41" selection-end-line="115" selection-end-column="41" />
               <folding>
                 <marker date="1468733414393" expanded="true" signature="3561:3695" placeholder="select name,..T_person..." />
@@ -98,7 +98,7 @@
       <file leaf-file-name="login1.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/login1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.31460676">
+            <state vertical-scroll-proportion="4.5617976">
               <caret line="66" column="97" selection-start-line="66" selection-start-column="97" selection-end-line="66" selection-end-column="97" />
               <folding>
                 <marker date="1469014863927" expanded="true" signature="3140:3192" placeholder="select * fro..T_person..." />
@@ -106,6 +106,18 @@
                 <marker date="1469014863927" expanded="true" signature="4637:4744" placeholder="insert into T_finish..." />
                 <marker date="1469014863927" expanded="true" signature="5338:5442" placeholder="select uid f..T_finish..." />
                 <marker date="1469014863927" expanded="true" signature="5710:5817" placeholder="insert into T_finish..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbandonedConnectionCleanupThread.java" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/下载/mysql-connector-java-5.1.38/src/com/mysql/jdbc/AbandonedConnectionCleanupThread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -143,23 +155,6 @@
                 <marker date="1468750691986" expanded="true" signature="2091:2130" placeholder="select id fr..T_person..." />
                 <marker date="1468750691986" expanded="true" signature="2091:2145" placeholder="select id fr..T_person..." />
                 <marker date="1468750691986" expanded="true" signature="3600:3673" placeholder="insert into T_person..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="searchago.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/searchago.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="107" column="54" selection-start-line="107" selection-start-column="54" selection-end-line="107" selection-end-column="54" />
-              <folding>
-                <marker date="1468746428496" expanded="true" signature="4004:4124" placeholder="select name,..T_finish..." />
-                <marker date="1468746428496" expanded="true" signature="4004:4131" placeholder="select name,..T_finish..." />
-                <marker date="1468746428496" expanded="true" signature="4004:4133" placeholder="select name,..T_finish..." />
-                <marker date="1468746428496" expanded="true" signature="4004:4153" placeholder="select name,..T_finish..." />
-                <marker date="1468746428496" expanded="true" signature="4004:4191" placeholder="select name,..T_finish..." />
-                <marker date="1468746428496" expanded="true" signature="4004:4192" placeholder="select name,..T_finish..." />
               </folding>
             </state>
           </provider>
@@ -207,10 +202,10 @@
         <option value="$PROJECT_DIR$/web/queryDate.html" />
         <option value="$PROJECT_DIR$/web/searchago.jsp" />
         <option value="$PROJECT_DIR$/src/test/register.java" />
-        <option value="$PROJECT_DIR$/src/test/Check_num.java" />
         <option value="$PROJECT_DIR$/src/test/Image.java" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/test/login1.java" />
+        <option value="$PROJECT_DIR$/src/test/Check_num.java" />
       </list>
     </option>
   </component>
@@ -999,12 +994,12 @@
       <workItem from="1468831699844" duration="2155000" />
       <workItem from="1468886748278" duration="649000" />
       <workItem from="1468927592853" duration="633000" />
-      <workItem from="1468972749166" duration="3247000" />
+      <workItem from="1468972749166" duration="5322000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="168333000" />
+    <option name="totallyTimeSpent" value="170408000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -1095,13 +1090,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/lsuccess.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/success.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1476,8 +1464,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
           <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#h3#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1508,9 +1496,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/norgs.jsp">
+    <entry file="file://$PROJECT_DIR$/src/test/register.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="99" column="47" selection-start-line="99" selection-start-column="11" selection-end-line="99" selection-end-column="52" />
+          <folding>
+            <marker date="1468750691986" expanded="true" signature="2091:2130" placeholder="select id fr..T_person..." />
+            <marker date="1468750691986" expanded="true" signature="2091:2145" placeholder="select id fr..T_person..." />
+            <marker date="1468750691986" expanded="true" signature="3600:3673" placeholder="insert into T_person..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/lerror.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.7">
+          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/norgs.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.7">
           <caret line="115" column="41" selection-start-line="115" selection-start-column="41" selection-end-line="115" selection-end-column="41" />
           <folding>
             <marker date="1468733414393" expanded="true" signature="3561:3695" placeholder="select name,..T_person..." />
@@ -1521,29 +1529,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/JdbcCnt.java">
+    <entry file="file://$USER_HOME$/下载/mysql-connector-java-5.1.38/src/com/mysql/jdbc/AbandonedConnectionCleanupThread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Image.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="37" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
+          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Check_num.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1565,29 +1557,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/register.java">
+    <entry file="file://$PROJECT_DIR$/src/test/Image.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="99" column="47" selection-start-line="99" selection-start-column="11" selection-end-line="99" selection-end-column="52" />
+          <caret line="39" column="37" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
           <folding>
-            <marker date="1468750691986" expanded="true" signature="2091:2130" placeholder="select id fr..T_person..." />
-            <marker date="1468750691986" expanded="true" signature="2091:2145" placeholder="select id fr..T_person..." />
-            <marker date="1468750691986" expanded="true" signature="3600:3673" placeholder="insert into T_person..." />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/lerror.jsp">
+    <entry file="file://$PROJECT_DIR$/src/test/Check_num.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.7">
-          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/JdbcCnt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/login1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31460676">
+        <state vertical-scroll-proportion="4.5617976">
           <caret line="66" column="97" selection-start-line="66" selection-start-column="97" selection-end-line="66" selection-end-column="97" />
           <folding>
             <marker date="1469014863927" expanded="true" signature="3140:3192" placeholder="select * fro..T_person..." />
