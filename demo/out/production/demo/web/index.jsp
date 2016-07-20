@@ -90,6 +90,11 @@
           margin-left:50px;
           margin-top:30px;
       }
+      .hs{
+          font-size:15px;
+          margin-left:36px;
+          margin-top:30px;
+      }
       .btn{
           margin-left:120px;
           margin-top:-25px;
@@ -181,6 +186,8 @@
           <div>
             <form action="login1.do" method="post">
               <label class="hz"><span>学号:</span><input type="text" name="Number"  placeholder="input your student id"></label>
+               <br/>
+                <label class="hs"><span>验证码:</span><input type="text" name="check_num"/> <img src="image.show"/></label>
               <br/>
               <br/>
                 <br/>
