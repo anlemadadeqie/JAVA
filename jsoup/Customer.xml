@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.7.0_79" class="java.beans.XMLDecoder">
+ <object class="Customer">
+  <void property="age">
+   <int>100</int>
+  </void>
+  <void property="id">
+   <int>1</int>
+  </void>
+  <void property="name">
+   <string>孙悟空</string>
+  </void>
+ </object>
+</java>
