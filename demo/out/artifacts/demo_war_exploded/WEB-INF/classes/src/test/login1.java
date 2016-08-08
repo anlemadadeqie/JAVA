@@ -24,54 +24,39 @@ public class login1 extends HttpServlet {
         String checknum = request.getParameter("check_num");
         response.setContentType("text/html;charset=UTF-8");
 
-        String ip = request.getHeader(" x-forwarded-for ");
-        if (ip == null || ip.length() == 0 || " unknown ".equalsIgnoreCase(ip)) {
-            ip = request.getHeader(" Proxy-Client-IP ");
-        }
-        if (ip == null || ip.length() == 0 || " unknown ".equalsIgnoreCase(ip)) {
-            ip = request.getHeader(" WL-Proxy-Client-IP ");
-        }
-        if (ip == null || ip.length() == 0 || " unknown ".equalsIgnoreCase(ip)) {
-            ip = request.getRemoteAddr();
-        }
+//        String ip = request.getHeader(" x-forwarded-for ");
+//        if (ip == null || ip.length() == 0 || " unknown ".equalsIgnoreCase(ip)) {
+//            ip = request.getHeader(" Proxy-Client-IP ");
+//        }
+//        if (ip == null || ip.length() == 0 || " unknown ".equalsIgnoreCase(ip)) {
+//            ip = request.getHeader(" WL-Proxy-Client-IP ");
+//        }
+//        if (ip == null || ip.length() == 0 || " unknown ".equalsIgnoreCase(ip)) {
+//            ip = request.getRemoteAddr();
+//        }
 
-        if (getCheckNum(checknum)) {
-            if (selectData(number)) {
-                request.getRequestDispatcher(SUCCESS_VIEW).forward(request, response);
-            } else {
-                request.setAttribute("errorss", errorss);
-                request.getRequestDispatcher(ERROR_VIEW).forward(request, response);
-                errorss.clear();
-            }
-        }
-       else{
+        if (selectData(number)) {
+            request.getRequestDispatcher(SUCCESS_VIEW).forward(request, response);
+        } else {
             request.setAttribute("errorss", errorss);
             request.getRequestDispatcher(ERROR_VIEW).forward(request, response);
             errorss.clear();
         }
+
+
     }
 
-    public  boolean  getIpAddr(String ip)  {
-        boolean result = false;
-        if(ip.startsWith("192.168.30")){
-            result = true;
-        }
-        else{
-            errorss.add("ip地址不正确！");
-        }
-        return result;
-    }
+//    public  boolean  getIpAddr(String ip)  {
+//        boolean result = false;
+//        if(ip.startsWith("192.168.30")){
+//            result = true;
+//        }
+//        else{
+//            errorss.add("ip地址不正确！");
+//        }
+//        return result;
+//    }
 
-    public boolean getCheckNum(String checknum){
-        boolean result = false;
-        if(checknum.equals(Check_num.check_num) && checknum != null && checknum.trim().length() != 0){
-            result = true;
-        }
-        else{
-            errorss.add("验证码不正确！");
-        }
-        return result;
-    }
 
     private boolean selectData(String number){
         Connection conn = null;
@@ -95,6 +80,7 @@ public class login1 extends HttpServlet {
 
                     SimpleDateFormat formats = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
                     String time = formats.format(cal2.getTime());
+
 
                     Calendar c = Calendar.getInstance();
                     int year = c.get(Calendar.YEAR);

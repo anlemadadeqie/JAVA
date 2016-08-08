@@ -187,9 +187,7 @@
             <form action="login1.do" method="post">
               <label class="hz"><span>学号:</span><input type="text" name="Number"  placeholder="input your student id"></label>
                <br/>
-                <label class="hs"><span>验证码:</span><input type="text" name="check_num"/> <img src="image.show"/></label>
-              <br/>
-              <br/>
+                <br/>
                 <br/>
               <button class="btn" type="submit">提交</button>
             </form>
@@ -249,6 +247,7 @@
                 Calendar c = Calendar.getInstance();
                 int year = c.get(Calendar.YEAR);
                 int month = c.get(Calendar.MONTH);
+//               System.out.println("月为"+month);
                 int day = c.get(Calendar.DATE);
                 int hour = c.get(Calendar.HOUR_OF_DAY);
 
