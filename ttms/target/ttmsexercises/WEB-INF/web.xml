@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+  <display-name>Archetype Created Web Application</display-name>
+
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+  <servlet>
+    <servlet-name>LoginCtrl</servlet-name>
+    <servlet-class>com.ttms.controller.LoginCtrl</servlet-class>
+    <init-param>
+      <param-name>User</param-name>
+      <param-value>ChangePass.html</param-value>
+    </init-param>
+    <init-param>
+      <param-name>Empy</param-name>
+      <param-value>index-x.html</param-value>
+    </init-param>
+    <init-param>
+      <param-name>Error</param-name>
+      <param-value>error.jsp</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginCtrl</servlet-name>
+    <url-pattern>/loginctrl.do</url-pattern>
+  </servlet-mapping>
+
+  <filter>
+    <filter-name>CharsetAllEncodingFilter</filter-name>
+    <filter-class>com.ttms.service.CharsetAllEncodingFilter</filter-class>
+    <init-param>
+      <param-name>encoding</param-name>
+      <param-value>UTF-8</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>CharsetAllEncodingFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+
+</web-app>
