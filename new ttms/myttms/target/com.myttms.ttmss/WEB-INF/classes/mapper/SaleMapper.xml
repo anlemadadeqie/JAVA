@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ttms.dao.SaleDAO">
+    <insert id="insertSale" parameterType="Sale" useGeneratedKeys="true" keyProperty="sale_ID">
+        insert into sale(
+        emp_id,
+        sale_time,
+        sale_payment,
+        sale_change,
+        sale_type,
+        sale_status)
+        values(
+        #{emp_id},
+        #{sale_time},
+        #{sale_payment},
+        #{sale_change},
+        #{sale_type},
+        #{sale_status})
+    </insert>
+
+    <update id = "updateSale" parameterType="Sale" >
+
+         update sale set
+         sale_status=#{sale_status}
+         where sale_ID=#{sale_ID}
+    </update>
+
+    <select id="selectSale" resultType="Sale">
+        select * from sale  order by sale_ID desc
+    </select>
+
+    <select id="SearchSale" parameterType="Ticket" resultType="int">
+        select sale_id from sale  where ticket_id = #{ticket_id}
+    </select>
+
+    <update id = "updateUser" parameterType="Sale" useGeneratedKeys="true" keyProperty="sale_ID" >
+
+        update sale set
+        emp_id = #{emp_id}
+        where sale_ID = #{sale_ID}
+    </update>
+
+    <update id = "updateStatus" parameterType="Sale" useGeneratedKeys="true" keyProperty="sale_ID" >
+
+        update sale set
+        sale_status = #{sale_status},
+        emp_id = #{emp_id}
+        where sale_ID = #{sale_ID}
+    </update>
+
+    <!--<update id = "updateTicket" parameterType="Sale" useGeneratedKeys="true" >-->
+
+        <!--update ticket set-->
+        <!--ticket_status = 0;-->
+        <!--where ( select * from sale,sale_item where sale_item.sale_ID = #{sale_ID}  and ticket.ticket_id = sale_item.ticket_id)-->
+
+    <!--</update>-->
+
+    <select id="SearchSalebyuser" parameterType="int" resultType="Sale">
+        select * from sale  where emp_id = #{user_id}
+    </select>
+
+
+
+    <select id="Searchbysaleitemid" parameterType="Sale_item" resultType="Ticket">
+        select * from ticket  where  ticket.ticket_id = #{ticket_id};
+    </select>
+    <select id="selectSaleByUser_id" parameterType="User_sale" resultType="Sale">
+        select * from sale  where  Sale.emp_id = #{user_id};
+    </select>
+
+    <select id="Searchbysaleid" parameterType="Sale" resultType="Sale_item">
+        select * from sale_item  where  sale_item.sale_ID = #{sale_ID};
+    </select>
+
+</mapper>

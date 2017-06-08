@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ttms.dao.PageDAO">
+
+    <select id="selectScheduleByPage" resultType="ScheduleDetail">
+
+        select schedule.sched_id, studio.studio_name, play.play_name, schedule.sched_time,
+        schedule.sched_ticket_price from studio,play,schedule where studio.studio_id=
+        schedule.studio_id and play.play_id = schedule.play_id order by schedule.sched_id desc
+        limit #{startPos},#{pageSize}
+
+    </select>
+
+    <select id="getScheduleCount" resultType="long">
+        select count(*) from schedule
+    </select>
+
+    <select id="selectEmployeeByPage" resultType="Employee">
+        select * from employee where type = 0 order by emp_id desc limit #{startPos},#{pageSize}
+    </select>
+
+    <select id="getEmployeeCount" resultType="long">
+        select count(*) from employee where type = 0
+    </select>
+
+    <select id="selectTopEmployeeByPage" resultType="Employee">
+        select * from employee where type = 1 order by emp_id desc limit #{startPos},#{pageSize}
+    </select>
+
+    <select id="getTopEmployeeCount" resultType="long">
+        select count(*) from employee where type = 1
+    </select>
+
+    <select id="selectStudioByPage" resultType="Studio">
+        select * from studio order by studio_id desc limit #{startPos},#{pageSize}
+    </select>
+
+    <select id="getStudioCount" resultType="long">
+        select count(*) from studio
+    </select>
+
+    <select id="selectPlayByPage" resultType="Play">
+        select * from play order by play_id desc limit #{startPos},#{pageSize}
+    </select>
+
+    <select id="getPlayCount" resultType="long">
+        select count(*) from play
+    </select>
+
+
+    <select id="selectNoticeByPage" resultType="Notice">
+        select * from notice order by notice_id desc limit #{startPos}, #{pageSize}
+    </select>
+
+    <select id="getNoticeCount" resultType="long">
+        select count(*) from notice
+    </select>
+
+
+
+</mapper>

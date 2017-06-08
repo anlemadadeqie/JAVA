@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ttms.dao.TicketDAO">
+
+    <insert id="insertTicket" parameterType="Ticket" useGeneratedKeys="true" keyProperty="ticket_id">
+        insert into ticket(
+        seat_id,
+        sched_id,
+        ticket_price,
+        ticket_status,
+        ticket_locked_time)
+        values(
+        #{seat_id},
+        #{sched_id},
+        #{ticket_price},
+        #{ticket_status},
+        #{ticket_locked_time})
+    </insert>
+
+
+
+    <!--<delete id="deleteStudio" parameterType="int">-->
+        <!--delete from studio where studio_id = #{studio_id}-->
+    <!--</delete>-->
+
+    <!--<update id="updateStudio" parameterType="Studio">-->
+        <!--update studio set-->
+        <!--studio_name = #{studio_name},-->
+        <!--studio_row_count = #{studio_row_count},-->
+        <!--studio_col_count = #{studio_col_count},-->
+        <!--studio_introduction = #{studio_introduction},-->
+        <!--studio_flag = #{studio_flag}-->
+        <!--where studio_id = #{studio_id}-->
+    <!--</update>-->
+
+    <select id="SearchTicket" parameterType="Ticket" resultType="Ticket">
+        select * from ticket where seat_id = #{seat_id} and sched_id=#{sched_id}
+     </select>
+
+
+
+    <select id="SearchTicket2" parameterType="Ticket" resultType="Ticket">
+        select * from ticket where seat_id = #{seat_id} and sched_id=#{sched_id}
+    </select>
+
+
+    <select id="SearchTicketStatus" parameterType="Ticket" resultType="int">
+        select ticket_status from ticket where ticket_id = #{ticket_id}
+    </select>
+
+    <update id="updateTicketStatus" parameterType="Ticket">
+        UPDATE ticket SET ticket_status = #{ticket_status} WHERE ticket_id = #{ticket_id}
+    </update>
+
+    <!--<select id="selectStudioByStudio_flag" parameterType="int" resultType="Studio">-->
+        <!--select * from studio where studio_flag = #{studio_flag}-->
+    <!--</select>-->
+
+    <!--<select id="selectStudio" resultType="Studio">-->
+        <!--select * from studio order by studio_id desc-->
+    <!--</select>-->
+
+    <!--<select id="selectSpecialStudio" parameterType="int" resultType="Studio">-->
+        <!--select * from studio where studio_id != #{studio_id}-->
+    <!--</select>-->
+
+    <select id="searchbyidforsche" parameterType="Ticket" resultType="Schedule">
+        select * from schedule where sched_id = #{sched_id}
+    </select>
+
+    <select id="serchforseat" parameterType="Ticket" resultType="Seat">
+        select * from seat where seat_id = #{seat_id}
+    </select>
+</mapper>

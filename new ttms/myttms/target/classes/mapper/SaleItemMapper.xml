@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ttms.dao.SaleitemDAO">
+    <insert id="insertSaleitem" parameterType="Sale_item" useGeneratedKeys="true" keyProperty="sale_item_id">
+        insert into sale_item(
+        ticket_id,
+        sale_ID,
+        sale_item_price)
+        values(
+        #{ticket_id},
+        #{sale_ID},
+        #{sale_item_price})
+    </insert>
+
+    <select id="selectSale_item"  resultType="Sale_item" >
+        select * from sale_item  order by sale_item_id desc
+    </select>
+
+    <select id="SearchSaleItem"  parameterType="Ticket" resultType="Sale_item" >
+        select * from sale_item where ticket_id=#{ticket_id}
+    </select>
+
+    <select id="Searchbysaleitemid"  parameterType="Sale_item" resultType="Ticket" >
+        select * from ticket where ticket_id=#{sale_item_id}
+    </select>
+
+
+    <select id="selectSale_IDBySale_item_id"  parameterType="Sale_item" resultType="Sale" >
+        select * from sale where Sale.sale_ID=#{sale_ID}
+    </select>
+
+
+</mapper>
